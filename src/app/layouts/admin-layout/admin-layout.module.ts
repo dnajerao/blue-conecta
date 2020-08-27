@@ -8,8 +8,11 @@ import { NguiMapModule} from '@ngui/map';
 
 import { AdminLayoutRoutes } from './admin-layout.routing';
 
+
 import { HomeComponent } from '../../home/home.component';
 import { UserComponent } from '../../user/user.component';
+import { EmailComponent } from '../../email/email.component';
+import { SmsComponent } from '../../sms/sms.component';
 import { TablesComponent } from '../../tables/tables.component';
 import { TypographyComponent } from '../../typography/typography.component';
 import { IconsComponent } from '../../icons/icons.component';
@@ -29,6 +32,8 @@ import { UpgradeComponent } from '../../upgrade/upgrade.component';
   declarations: [
     HomeComponent,
     UserComponent,
+    EmailComponent,
+    SmsComponent,
     TablesComponent,
     TypographyComponent,
     IconsComponent,

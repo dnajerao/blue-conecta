@@ -137,7 +137,7 @@ import { NgxMatSelectSearchModule } from 'ngx-mat-select-search';
   declarations: [
     AppComponent,
     AdminLayoutComponent,
-    DropdownMultiselectComponent
+    DropdownMultiselectComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

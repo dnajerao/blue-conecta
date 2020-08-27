@@ -1,0 +1,87 @@
+<div class="main-content" >
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="header">
+                      <h4 class="title">Capture los datos para el envío de SMS</h4>
+                  </div>
+                  <div class="content">
+                      <form>
+
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <div class="form-group">
+                                      <label>Asunto</label>
+                                      <input type="text" class="form-control" id="asunto" placeholder="ej. Mensaje de Conecta Bimbo" value="">
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <div class="form-group">
+                                      <label>Mensaje</label>
+                                      <input type="text" class="form-control" id="mensaje" placeholder="ej. Saludos desde Conecta Bimbo" value="">
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <div class="form-group">
+                                      <label>Claves (BimboID) separadas por comas, espacios, o saltos de línea</label>
+                                      <textarea rows="5" class="form-control" id="clavesBimbo" placeholder="ej. 881000010,2192439" value=""></textarea>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Estados</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>CDMX</option>
+                                      <option>Sonora</option>
+                                      <option>Aguascalientes</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Ciudades</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                          </div>
+
+                          <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Disposiivos</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>App</option>
+                                      <option>N1</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                          </div>
+
+                          <button type="submit" class="btn btn-info btn-fill pull-right" (click)="btnEnviarNotificacionesClick()">Enviar SMS</button>
+                          <div class="clearfix"></div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

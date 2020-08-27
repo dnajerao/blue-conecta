@@ -482,4 +482,4 @@ export interface PushNotificationObject {
 interface Estado {
   id: string;
   name: string;
- }
+}
