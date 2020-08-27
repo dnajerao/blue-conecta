@@ -1,0 +1,47 @@
+<div class="basic-container">
+
+  <h2>Seleccione estado(s): </h2>
+  <p>
+    <mat-form-field>
+      <mat-select [formControl]="estadoMultiCtrl" placeholder="Estados" [multiple]="true" #multiSelectEstado>
+        <mat-option>
+          <ngx-mat-select-search [formControl]="estadoMultiFilterCtrl"></ngx-mat-select-search>
+        </mat-option>
+        <mat-option *ngFor="let estado of filteredEstadosMulti | async" [value]="estado" (click)="getMunicipios()">
+          {{estado.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </p>
+
+  <p>
+    Estados Seleccionados 
+  </p>
+  <ul *ngFor="let estado of estadoMultiCtrl?.value">
+    <li>{{estado.name}}</li>
+  </ul>
+
+  <div *ngIf="municipioActive">
+    <h2>Seleccione municipio(s): </h2>
+    <p>
+      <mat-form-field>
+        <mat-select [formControl]="municipioMultiCtrl" placeholder="Municipios" [multiple]="true" #multiSelectMunicipio>
+          <mat-option>
+            <ngx-mat-select-search [formControl]="municipioMultiFilterCtrl"></ngx-mat-select-search>
+          </mat-option>
+          <mat-option *ngFor="let municipio of filteredMunicipiosMulti | async" [value]="municipio">
+            {{municipio.name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </p>
+  
+    <p>
+      Municipios Seleccionados 
+    </p>
+    <ul *ngFor="let municipio of municipioMultiCtrl?.value">
+      <li>{{municipio.name}}</li>
+    </ul>
+  </div>
+
+</div>
